@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Properties | Faiz Real Estate Islamabad</title>
+  <meta name="description"
+    content="Browse all verified property listings by Faiz Real Estate — houses, apartments, plots, villas, and more across Islamabad's top areas.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F7F8FA
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Poppins', sans-serif
+    }
+
+    .btn-primary {
+      background: #2563EB;
+      color: #fff;
+      font-weight: 600
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8
+    }
+
+    .btn-outline {
+      border: 2px solid #2563EB;
+      color: #2563EB;
+      font-weight: 600
+    }
+
+    .btn-outline:hover {
+      background: #2563EB;
+      color: #fff
+    }
+
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px -8px rgba(37, 99, 235, 0.12)
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid #E5E7EB;
+      transition: all .2s
+    }
+
+    .chip.active,
+    .chip:hover {
+      background: #2563EB;
+      color: #fff;
+      border-color: #2563EB
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 50;
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.12);
+      min-width: 220px;
+      padding: 8px 0
+    }
+
+    .dropdown-trigger:hover .dropdown-menu,
+    .dropdown-trigger:focus-within .dropdown-menu {
+      display: block
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #1F2937
+    }
+
+    .dropdown-menu a:hover {
+      background: #EFF6FF;
+      color: #2563EB
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm"
+            style="background:#2563EB">FR</div>
+          <div>
+            <div class="font-bold text-lg leading-none" style="font-family:'Poppins',sans-serif;color:#0B1220">Faiz Real
+              Estate</div>
+            <div class="text-xs" style="color:#6B7280">Trusted Property Solutions</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="index.html" class="text-sm font-medium hover:text-blue-600 transition-colors"
+            style="color:#1F2937">Home</a>
+          <div class="dropdown-trigger relative">
+            <button class="text-sm font-medium flex items-center gap-1 hover:text-blue-600 transition-colors"
+              style="color:#2563EB">Properties ▾</button>
+            <div class="dropdown-menu">
+              <a href="properties.html">All Properties</a><a href="houses.html">Houses</a><a
+                href="apartments.html">Apartments</a><a href="residential-plots.html">Residential Plots</a><a
+                href="commercial-plots.html">Commercial Plots</a><a href="farmhouse-plots.html">Farmhouse Plots</a><a
+                href="villas.html">Villas</a>
+            </div>
+          </div>
+          <div class="dropdown-trigger relative">
+            <button class="text-sm font-medium flex items-center gap-1 hover:text-blue-600 transition-colors"
+              style="color:#1F2937">Areas ▾</button>
+            <div class="dropdown-menu" style="max-height:340px;overflow-y:auto">
+              <a href="b17.html">B-17 Islamabad</a><a href="g13.html">G-13 Islamabad</a><a href="g14.html">G-14
+                Islamabad</a><a href="e11.html">E-11 Islamabad</a><a href="f11.html">F-11 Islamabad</a><a
+                href="i8.html">I-8 Islamabad</a><a href="d12.html">D-12 Islamabad</a><a href="bani-gala.html">Bani
+                Gala</a><a href="gulberg-greens.html">Gulberg Greens</a><a href="park-view-city.html">Park View
+                City</a><a href="bahria-enclave.html">Bahria Enclave</a><a href="soan-garden.html">Soan Garden</a><a
+                href="dha-phase-2.html">DHA Phase 2</a>
+            </div>
+          </div>
+          <a href="services.html" class="text-sm font-medium hover:text-blue-600 transition-colors"
+            style="color:#1F2937">Services</a>
+          <a href="contact.html" class="text-sm font-medium hover:text-blue-600 transition-colors"
+            style="color:#1F2937">Contact</a>
+          <a href="contact.html" class="text-sm px-5 py-2 rounded-lg btn-primary transition-all">Book Consultation</a>
+        </nav>
+        <button class="md:hidden p-2" onclick="document.getElementById('mob-menu').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mob-menu" class="hidden md:hidden bg-white border-t px-4 py-4 space-y-2 max-h-96 overflow-y-auto">
+      <a href="index.html" class="block text-sm py-2 font-medium" style="color:#1F2937">Home</a>
+      <div class="text-xs font-semibold uppercase tracking-wider pt-2 pb-1" style="color:#2563EB">Properties</div>
+      <a href="properties.html" class="block text-sm py-1 pl-3" style="color:#6B7280">All Properties</a><a
+        href="houses.html" class="block text-sm py-1 pl-3" style="color:#6B7280">Houses</a><a href="apartments.html"
+        class="block text-sm py-1 pl-3" style="color:#6B7280">Apartments</a><a href="residential-plots.html"
+        class="block text-sm py-1 pl-3" style="color:#6B7280">Residential Plots</a><a href="commercial-plots.html"
+        class="block text-sm py-1 pl-3" style="color:#6B7280">Commercial Plots</a><a href="farmhouse-plots.html"
+        class="block text-sm py-1 pl-3" style="color:#6B7280">Farmhouse Plots</a><a href="villas.html"
+        class="block text-sm py-1 pl-3" style="color:#6B7280">Villas</a>
+      <div class="text-xs font-semibold uppercase tracking-wider pt-2 pb-1" style="color:#2563EB">Areas</div>
+      <a href="b17.html" class="block text-sm py-1 pl-3" style="color:#6B7280">B-17</a><a href="g13.html"
+        class="block text-sm py-1 pl-3" style="color:#6B7280">G-13</a><a href="e11.html" class="block text-sm py-1 pl-3"
+        style="color:#6B7280">E-11</a><a href="d12.html" class="block text-sm py-1 pl-3"
+        style="color:#6B7280">D-12</a><a href="dha-phase-2.html" class="block text-sm py-1 pl-3"
+        style="color:#6B7280">DHA Phase 2</a>
+      <a href="services.html" class="block text-sm py-2 font-medium" style="color:#1F2937">Services</a>
+      <a href="contact.html" class="block text-sm py-2 font-medium" style="color:#1F2937">Contact</a>
+      <a href="contact.html" class="block text-center btn-primary text-sm px-4 py-2.5 rounded-lg mt-2">Book
+        Consultation</a>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="py-14" style="background:linear-gradient(135deg,#0B1220 0%,#1e3a8a 100%)">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color:#14B8A6">Our Listings</p>
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-4" style="font-family:'Poppins',sans-serif">All Properties
+      </h1>
+      <p class="text-sm max-w-xl mx-auto" style="color:rgba(255,255,255,0.72)">Browse verified demo listings across
+        Islamabad's top localities — houses, apartments, plots, commercial, farmhouses, and villas.</p>
+      <div class="mt-4 text-xs px-4 py-2 rounded-lg inline-block"
+        style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.6)">⚠️ These are demo/sample listings for
+        website design. Actual available properties can be updated later.</div>
+    </div>
+  </section>
+
+  <!-- SEARCH PANEL -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-0 py-6">
+    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 items-end">
+        <div><label class="block text-xs font-semibold uppercase tracking-wider mb-2"
+            style="color:#1F2937">Purpose</label><select id="s-purpose"
+            class="w-full border border-gray-200 rounded-lg py-2.5 px-3 text-sm" style="background:#F7F8FA">
+            <option value="">Any</option>
+            <option>Buy</option>
+            <option>Rent</option>
+            <option>Invest</option>
+          </select></div>
+        <div><label class="block text-xs font-semibold uppercase tracking-wider mb-2"
+            style="color:#1F2937">Type</label><select id="s-type"
+            class="w-full border border-gray-200 rounded-lg py-2.5 px-3 text-sm" style="background:#F7F8FA">
+            <option value="">Any</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Residential Plot</option>
+            <option>Commercial Plot</option>
+            <option>Farmhouse Plot</option>
+            <option>Villa</option>
+          </select></div>
+        <div><label class="block text-xs font-semibold uppercase tracking-wider mb-2"
+            style="color:#1F2937">Location</label><select id="s-location"
+            class="w-full border border-gray-200 rounded-lg py-2.5 px-3 text-sm" style="background:#F7F8FA">
+            <option value="">Any</option>
+            <option>B-17 Islamabad</option>
+            <option>G-13 Islamabad</option>
+            <option>G-14 Islamabad</option>
+            <option>E-11 Islamabad</option>
+            <option>F-11 Islamabad</option>
+            <option>I-8 Islamabad</option>
+            <option>D-12 Islamabad</option>
+            <option>Bani Gala Islamabad</option>
+            <option>Gulberg Greens Islamabad</option>
+            <option>Park View City Islamabad</option>
+            <option>Bahria Enclave Islamabad</option>
+            <option>Soan Garden Islamabad</option>
+            <option>DHA Phase 2 Islamabad</option>
+          </select></div>
+        <div><label class="block text-xs font-semibold uppercase tracking-wider mb-2"
+            style="color:#1F2937">Budget</label><select id="s-budget"
+            class="w-full border border-gray-200 rounded-lg py-2.5 px-3 text-sm" style="background:#F7F8FA">
+            <option value="">Any</option>
+            <option>50 Lac – 1 Crore</option>
+            <option>1 Crore – 2 Crore</option>
+            <option>2 Crore – 5 Crore</option>
+            <option>5 Crore+</option>
+          </select></div>
+        <div><button onclick="doSearch()"
+            class="w-full btn-primary py-2.5 px-4 rounded-lg text-sm font-semibold transition-all">Search</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY CHIPS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex flex-wrap gap-2">
+      <span class="chip active" onclick="filterCards('all',this)">All</span>
+      <span class="chip" onclick="filterCards('house',this)">Houses</span>
+      <span class="chip" onclick="filterCards('apartment',this)">Apartments</span>
+      <span class="chip" onclick="filterCards('residential',this)">Residential Plots</span>
+      <span class="chip" onclick="filterCards('commercial',this)">Commercial Plots</span>
+      <span class="chip" onclick="filterCards('farmhouse',this)">Farmhouse Plots</span>
+      <span class="chip" onclick="filterCards('villa',this)">Villas</span>
+    </div>
+  </div>
+
+  <!-- PROPERTY GRID -->
+  <div id="card-grid"
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- HOUSES -->
+    <div
+      class="prop-card house bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80"
+          alt="B-17 House" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#2563EB">Verified</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">B-17 Islamabad · House</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">10 Marla Modern
+          House</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 2.45 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">5 Beds · 6 Baths · 10 Marla</div>
+        <div class="mt-auto flex gap-2"><a href="b17.html#b17-10-marla-house"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card house bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=600&q=80"
+          alt="G-13 House" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#14B8A6">Hot Deal</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">G-13 Islamabad · House</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">5 Marla House</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 1.95 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">4 Beds · 4 Baths · 5 Marla</div>
+        <div class="mt-auto flex gap-2"><a href="g13.html#g13-5-marla-house"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card house bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=600&q=80"
+          alt="E-11 House" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Premium</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">E-11 Islamabad · House</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">5 Marla House</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 2.4 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">4 Beds · 4 Baths · 5 Marla</div>
+        <div class="mt-auto flex gap-2"><a href="e11.html#e11-5-marla-house"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card house bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=600&q=80"
+          alt="F-11 House" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#2563EB">Verified</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">F-11 Islamabad · House</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">10 Marla House</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 5.2 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">5 Beds · 5 Baths · Elite Sector</div>
+        <div class="mt-auto flex gap-2"><a href="f11.html#f11-10-marla-house"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card house bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80"
+          alt="DHA House" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Investment Pick</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">DHA Phase 2 Islamabad · House</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">1 Kanal House</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 8.7 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">6 Beds · 7 Baths · 1 Kanal</div>
+        <div class="mt-auto flex gap-2"><a href="dha-phase-2.html#dha-1kanal-house"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <!-- APARTMENTS -->
+    <div
+      class="prop-card apartment bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80"
+          alt="E-11 Apartment"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#14B8A6">Hot Deal</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">E-11 Islamabad · Apartment</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">Luxury 2-Bed
+          Apartment</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 1.35 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">2 Beds · 2 Baths</div>
+        <div class="mt-auto flex gap-2"><a href="e11.html#e11-luxury-apartment"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card apartment bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80"
+          alt="B-17 Apartment"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#2563EB">Verified</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">B-17 Islamabad · Apartment</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">2 Bed Apartment</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 95 Lac</div>
+        <div class="text-xs mb-4" style="color:#6B7280">2 Beds · 2 Baths</div>
+        <div class="mt-auto flex gap-2"><a href="b17.html#b17-2bed-apartment"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card apartment bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80"
+          alt="DHA Apartment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Premium</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">DHA Phase 2 · Apartment</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">3 Bed Apartment</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 2.6 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">3 Beds · 3 Baths</div>
+        <div class="mt-auto flex gap-2"><a href="dha-phase-2.html#dha-apt"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <!-- RESIDENTIAL PLOTS -->
+    <div
+      class="prop-card residential bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80"
+          alt="D-12 Plot" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Investment Pick</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">D-12 Islamabad · Residential Plot</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">1 Kanal Residential
+          Plot</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 5.8 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">1 Kanal · Margalla Views</div>
+        <div class="mt-auto flex gap-2"><a href="d12.html#d12-1-kanal-plot"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card residential bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?auto=format&fit=crop&w=600&q=80"
+          alt="B-17 Plot" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#14B8A6">Hot Deal</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">B-17 Islamabad · Residential Plot</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">5 Marla Residential
+          Plot</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 85 Lac</div>
+        <div class="text-xs mb-4" style="color:#6B7280">5 Marla · Corner Available</div>
+        <div class="mt-auto flex gap-2"><a href="b17.html#b17-5-marla-plot"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <!-- COMMERCIAL -->
+    <div
+      class="prop-card commercial bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=600&q=80"
+          alt="Commercial Plot"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Investment Pick</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">G-13 Islamabad · Commercial Plot</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">4 Marla Commercial
+          Plot</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 3.1 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">4 Marla · Prime Commercial</div>
+        <div class="mt-auto flex gap-2"><a href="g13.html#g13-commercial-plot"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card commercial bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1554435493-93422e8d1c46?auto=format&fit=crop&w=600&q=80"
+          alt="DHA Commercial"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#2563EB">Verified</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">DHA Phase 2 · Commercial Plot</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">Commercial Plot</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 6.5 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">Commercial · High-Value Zone</div>
+        <div class="mt-auto flex gap-2"><a href="dha-phase-2.html#dha-commercial"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <!-- FARMHOUSE -->
+    <div
+      class="prop-card farmhouse bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80"
+          alt="Gulberg Farmhouse"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#14B8A6">Hot Deal</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">Gulberg Greens · Farmhouse Plot</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">4 Kanal Farmhouse
+          Plot</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 3.25 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">4 Kanal · Green Environment</div>
+        <div class="mt-auto flex gap-2"><a href="gulberg-greens.html#gulberg-4kanal"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card farmhouse bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80"
+          alt="Bani Gala Farmhouse"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Investment Pick</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">Bani Gala Islamabad · Farmhouse Plot</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">Farmhouse Plot</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 2.75 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">Scenic Lake View Location</div>
+        <div class="mt-auto flex gap-2"><a href="bani-gala.html#banigala-farmhouse"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <!-- VILLAS -->
+    <div
+      class="prop-card villa bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80"
+          alt="DHA Villa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#0B1220">Premium</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">DHA Phase 2 · Villa</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">Luxury Villa</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 11 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">Ultra-Premium · 1+ Kanal</div>
+        <div class="mt-auto flex gap-2"><a href="dha-phase-2.html#dha-villa"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+    <div
+      class="prop-card villa bg-white rounded-2xl border border-gray-100 shadow-sm card-hover transition-all duration-300 overflow-hidden flex flex-col">
+      <div class="relative h-48 overflow-hidden"><img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80"
+          alt="Bani Gala Villa"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"><span
+          class="absolute top-3 left-3 text-white text-xs font-semibold px-2.5 py-1 rounded-full"
+          style="background:#14B8A6">Scenic View</span></div>
+      <div class="p-5 flex flex-col flex-1">
+        <div class="text-xs mb-1" style="color:#6B7280">Bani Gala Islamabad · Villa</div>
+        <h3 class="font-bold text-base mb-1" style="font-family:'Poppins',sans-serif;color:#0B1220">Lake View Villa</h3>
+        <div class="text-base font-bold mb-2" style="color:#2563EB">PKR 6.8 Crore</div>
+        <div class="text-xs mb-4" style="color:#6B7280">Lake Facing · Serene Location</div>
+        <div class="mt-auto flex gap-2"><a href="bani-gala.html#banigala-villa"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg"
+            style="border:1px solid #BFDBFE;color:#2563EB">View Details</a><a href="contact.html"
+            class="flex-1 text-center text-xs font-semibold py-2 rounded-lg btn-primary">Book</a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#0B1220" class="text-white pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold"
+              style="background:#2563EB">FR</div><span class="font-bold" style="font-family:'Poppins',sans-serif">Faiz
+              Real Estate</span>
+          </div>
+          <p class="text-xs leading-relaxed" style="color:rgba(255,255,255,0.6)">Trusted Property Solutions in Islamabad
+            & Rawalpindi.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-4" style="color:#14B8A6">Quick Links</h4>
+          <ul class="space-y-2 text-xs" style="color:rgba(255,255,255,0.6)">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="properties.html" class="hover:text-white">Properties</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-4" style="color:#14B8A6">Property Types</h4>
+          <ul class="space-y-2 text-xs" style="color:rgba(255,255,255,0.6)">
+            <li><a href="houses.html" class="hover:text-white">Houses</a></li>
+            <li><a href="apartments.html" class="hover:text-white">Apartments</a></li>
+            <li><a href="residential-plots.html" class="hover:text-white">Residential Plots</a></li>
+            <li><a href="commercial-plots.html" class="hover:text-white">Commercial</a></li>
+            <li><a href="villas.html" class="hover:text-white">Villas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-sm mb-4" style="color:#14B8A6">Contact</h4>
+          <div class="space-y-2 text-xs" style="color:rgba(255,255,255,0.6)">
+            <div>📞 <a href="tel:+923115663513" class="hover:text-white">+92 311 5663513</a></div>
+            <div>💬 <a href="https://wa.me/923115663513" target="_blank" class="hover:text-white">WhatsApp Us</a></div>
+            <div>📍 Islamabad, Pakistan</div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs" style="color:rgba(255,255,255,0.4)">© 2026 Faiz Real Estate. All rights
+        reserved.</div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/923115663513" target="_blank"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-all"
+    style="background:#25D366">
+    <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
+  </a>
+
+  <script>
+    const locationPages = { "B-17 Islamabad": "b17.html", "G-13 Islamabad": "g13.html", "G-14 Islamabad": "g14.html", "E-11 Islamabad": "e11.html", "F-11 Islamabad": "f11.html", "I-8 Islamabad": "i8.html", "D-12 Islamabad": "d12.html", "Bani Gala Islamabad": "bani-gala.html", "Gulberg Greens Islamabad": "gulberg-greens.html", "Park View City Islamabad": "park-view-city.html", "Bahria Enclave Islamabad": "bahria-enclave.html", "Soan Garden Islamabad": "soan-garden.html", "DHA Phase 2 Islamabad": "dha-phase-2.html" };
+    const typePages = { "House": "houses.html", "Apartment": "apartments.html", "Residential Plot": "residential-plots.html", "Commercial Plot": "commercial-plots.html", "Farmhouse Plot": "farmhouse-plots.html", "Villa": "villas.html" };
+    function doSearch() { const loc = document.getElementById('s-location').value; const type = document.getElementById('s-type').value; if (loc && !type) { window.location.href = locationPages[loc] || 'properties.html'; return; } if (type && !loc) { window.location.href = typePages[type] || 'properties.html'; return; } window.location.href = 'properties.html'; }
+    function filterCards(cat, el) {
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      el.classList.add('active');
+      document.querySelectorAll('.prop-card').forEach(c => {
+        if (cat === 'all' || c.classList.contains(cat)) { c.style.display = 'flex'; } else { c.style.display = 'none'; }
+      });
+    }
+  </script>
+</body>
+
+</html>
